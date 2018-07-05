@@ -35,6 +35,7 @@ Plugin 'sort-python-imports'
 Plugin 'cppcomplete'
 Plugin 'python.vim'
 Plugin 'pythonhelper'
+Plugin 'taglist.vim'
 
 
 " 由Git支持但不再github上的插件仓库 Plugin 'git clone 后面的地址'
