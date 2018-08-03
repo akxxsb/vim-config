@@ -19,6 +19,7 @@ set ts=4
 set expandtab
 set shiftwidth=4
 set softtabstop=4
+set colorcolumn=120
 set showcmd
 set autoindent
 set ruler
@@ -56,6 +57,7 @@ nnoremap <leader>nnu :set nonu<CR>
 
 nnoremap <leader>ner :NERDTree<CR>
 
+nnoremap <leader>gd :YcmCompleter GoToDefinition<CR>
 
 " ========================================================================================
 
