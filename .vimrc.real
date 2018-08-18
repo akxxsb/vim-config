@@ -69,3 +69,9 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 if has("autocmd")
     autocmd BufReadPost * if line("'\"")>0&&line("'\"")<=line("$") | exe "normal g'\"" | endif
 endif
+
+" use ctags
+" 1. 生成ctags
+" ctags -R .
+" 2. 设置ctags路径
+" set tags=/root/moocos/ucore_os_lab/labcodes/lab1/tags
