@@ -27,6 +27,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vimcn/vimcdoc'
 Plugin 'fatih/vim-go'
+" 关闭保存文件时自动调用gofmt
+let g:go_fmt_autosave = 0
+
 Plugin 'Valloric/YouCompleteMe'
 " ycm 配置
 let g:ycm_server_python_interpreter='/usr/bin/python'
