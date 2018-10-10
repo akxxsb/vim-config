@@ -58,6 +58,8 @@ nnoremap <leader>nnu :set nonu<CR>
 nnoremap <leader>ner :NERDTree<CR>
 
 nnoremap <leader>gd :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gi :YcmCompleter GoToInclude<CR>
+nnoremap <leader>gt :YcmCompleter GetType<CR>
 
 " ========================================================================================
 
