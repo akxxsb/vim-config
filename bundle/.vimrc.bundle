@@ -35,6 +35,14 @@ Plugin 'Valloric/YouCompleteMe'
 let g:ycm_server_python_interpreter='/usr/bin/python'
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 
+Plugin 'othree/html5.vim'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'tpope/vim-haml'
+Plugin 'posva/vim-vue'
+Plugin 'sheerun/vim-polyglot'
+
+
 " 来自 http://vim-scripts.org/vim/scripts.html 的插件
 " Plugin '插件名称' 实际上是 Plugin 'vim-scripts/插件仓库名' 只是此处的用户名可以省略
 " Plugin 'L9'
@@ -45,6 +53,8 @@ Plugin 'cppcomplete'
 Plugin 'python.vim'
 Plugin 'pythonhelper'
 Plugin 'taglist.vim'
+Plugin 'nginx.vim'
+Plugin 'octave.vim'
 
 
 " 由Git支持但不再github上的插件仓库 Plugin 'git clone 后面的地址'

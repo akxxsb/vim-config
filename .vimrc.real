@@ -26,15 +26,15 @@ set ruler
 
 " 设置tab 和行位空格显示方式
 set list
-set listchars=tab:>-,trail:_
+set listchars=tab:<-,trail:_
 
 " Configuration file for vim
-set modelines=0		" CVE-2007-2438
+set modelines=0	" CVE-2007-2438
 
 " Normally we use vim-extensions. If you want true vi-compatibility
 " remove change the following statements
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
-set backspace=2		" more powerful backspacing
+set backspace=2	" more powerful backspacing
 
 
 " ========================================================================================
@@ -60,6 +60,8 @@ nnoremap <leader>ner :NERDTree<CR>
 nnoremap <leader>gd :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gi :YcmCompleter GoToInclude<CR>
 nnoremap <leader>gt :YcmCompleter GetType<CR>
+nnoremap <leader>rot13 ggVGg?<CR>
+nnoremap <leader>fmt :!astyle %<CR>e<CR>e<CR>
 
 " ========================================================================================
 
@@ -77,3 +79,4 @@ endif
 " ctags -R .
 " 2. 设置ctags路径
 " set tags=/root/moocos/ucore_os_lab/labcodes/lab1/tags
+set tags=/Users/didi/work/replay/tcpcopy/tags
