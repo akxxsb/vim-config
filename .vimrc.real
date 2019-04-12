@@ -79,4 +79,4 @@ endif
 " ctags -R .
 " 2. 设置ctags路径
 " set tags=/root/moocos/ucore_os_lab/labcodes/lab1/tags
-set tags=/Users/didi/work/replay/tcpcopy/tags
+set tags=/Users/didi/work/eta-feature/tags
