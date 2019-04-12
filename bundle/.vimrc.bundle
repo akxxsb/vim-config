@@ -32,7 +32,7 @@ let g:go_fmt_autosave = 0
 
 Plugin 'Valloric/YouCompleteMe'
 " ycm 配置
-let g:ycm_server_python_interpreter='/usr/bin/env python'
+let g:ycm_server_python_interpreter='/usr/bin/python'
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 " 不高亮显示错误的行, 实在太炫酷了,影响阅读代码
 let g:ycm_enable_diagnostic_highlighting=0
