@@ -15,6 +15,7 @@ filetype plugin on
 filetype indent on
 
 set nu
+set so=10
 set ts=4
 set expandtab
 set shiftwidth=4
@@ -79,4 +80,4 @@ endif
 " ctags -R .
 " 2. 设置ctags路径
 " set tags=/root/moocos/ucore_os_lab/labcodes/lab1/tags
-set tags=/Users/didi/work/eta-feature/tags
+set tags=/Users/didi/work/feature-base-service/tags
