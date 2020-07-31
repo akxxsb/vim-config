@@ -3,6 +3,10 @@ if filereadable(expand("~/.vim/bundle/.vimrc.bundle"))
     source ~/.vim/bundle/.vimrc.bundle
 endif
 
+if filereadable(expand("~/.vim/.vimrc.func"))
+    source ~/.vim/.vimrc.func
+endif
+
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
 set encoding=utf-8
@@ -27,7 +31,7 @@ set ruler
 
 " 设置tab 和行位空格显示方式
 set list
-set listchars=tab:<-,trail:_
+set listchars=tab:>-,trail:-
 
 " Configuration file for vim
 set modelines=0	" CVE-2007-2438
@@ -80,4 +84,5 @@ endif
 " ctags -R .
 " 2. 设置ctags路径
 " set tags=/root/moocos/ucore_os_lab/labcodes/lab1/tags
-set tags=/Users/didi/work/feature-base-service/tags
+set mouse=n
+set tags=/Users/didi/work/hermes-trip/tags
