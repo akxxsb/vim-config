@@ -45,6 +45,7 @@ Plugin 'tpope/vim-haml'
 Plugin 'posva/vim-vue'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'suan/vim-instant-markdown'
+Plugin 'iamcco/markdown-preview.vim'
 
 
 " 来自 http://vim-scripts.org/vim/scripts.html 的插件

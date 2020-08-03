@@ -40,9 +40,16 @@ set modelines=0	" CVE-2007-2438
 " remove change the following statements
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 set backspace=2	" more powerful backspacing
+" ========================================================================================
 
+" auto cmd
+autocmd FileType python     nnoremap <buffer> <leader>c I#<esc>
+autocmd FileType cpp     nnoremap <buffer> <leader>c I//<esc>
+autocmd VimEnter * :NERDTree
+autocmd BufRead * :NERDTree
 
 " ========================================================================================
+
 " Map Keys
 
 let mapleader = '-'
@@ -60,13 +67,16 @@ nnoremap <leader>npt :set nopaste<CR>
 nnoremap <leader>nu :set nu<CR>
 nnoremap <leader>nnu :set nonu<CR>
 
-nnoremap <leader>ner :NERDTree<CR>
+nnoremap <leader>ner :NERDTreeToggle<CR>
 
 nnoremap <leader>gd :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gi :YcmCompleter GoToInclude<CR>
 nnoremap <leader>gt :YcmCompleter GetType<CR>
 nnoremap <leader>rot13 ggVGg?<CR>
 nnoremap <leader>fmt :!astyle %<CR>e<CR>e<CR>
+nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+
 
 " ========================================================================================
 
@@ -78,6 +88,8 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 if has("autocmd")
     autocmd BufReadPost * if line("'\"")>0&&line("'\"")<=line("$") | exe "normal g'\"" | endif
 endif
+
+" =======================================================================================
 
 " use ctags
 " 1. 生成ctags
